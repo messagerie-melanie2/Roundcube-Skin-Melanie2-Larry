@@ -1,0 +1,128 @@
+/**
+ * Roundcube webmail Melanie2_Larry styles for the Email section
+ *
+ * Copyright (c) 2015, PNE Annuaire et Messagerie/MEDDE
+ * Extend Larry FLINT skin
+ *
+ * The contents are subject to the Creative Commons Attribution-ShareAlike
+ * License. It is allowed to copy, distribute, transmit and to adapt the work
+ * by keeping credits to the original autors in the README file.
+ * See http://creativecommons.org/licenses/by-sa/3.0/ for details.
+ */
+
+#mailview-bottom {
+  border-radius: 0;
+}
+
+#messagelistfooter {
+  background: #ebebeb;
+}
+
+.folderlist li.mailbox .unreadcount {
+  top: 7px;
+}
+
+/*** message list ***/
+
+html.mozilla #mailboxlist > li:first-child {
+  border-radius: 0;
+}
+
+.messagelist tr td {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.messagelist thead td:first-child {
+  border-radius: 0;
+}
+
+
+.messagelist tr.thread.expanded td {
+  background-color: #fff;
+}
+
+.messagelist tr.unread {
+  font-weight: bold;
+/*  background-color: #fff; */
+}
+
+.messagelist thead tr th.sortedASC a,
+.messagelist thead tr th.sortedDESC a {
+  color: #000;
+}
+
+
+.messagelist tr > .status span.status,
+.messagelist tr > .flag span.flagged,
+.messagelist tr > .flag span.unflagged,
+.messagelist tr > .flag span.unflagged:hover,
+.messagelist tr > .status span.msgicon,
+.messagelist tr > .status span.unread {
+  display: inline-block;
+  vertical-align: middle;
+  height: 18px;
+  width: 20px;
+  padding: 0;
+  background: url(images/message-list.png?v=02) -100px 0 no-repeat;
+}
+
+.messagelist thead tr th.attachment span.attachment {
+  background-position: 0px -996px !important;
+}
+
+.messagelist tbody tr td.flag span.flagged {
+  background-position: center -80px !important;
+}
+
+.messagelist thead tr th.flag span.flagged {
+  background-position: center -80px !important;
+}
+
+.messagelist tr:hover td.status span.msgicon {
+  background-position: center 1px !important;
+}
+
+.messagelist tr:hover td.flag span.unflagged {
+  background-position: center -96px !important;
+}
+
+.messagelist tr td.status span.unread,
+.messagelist tr td.status span.unread:hover {
+  background-position: center -15px !important;
+}
+
+.messagelist thead tr th.status span.status {
+  background-position: center -15px !important;
+}
+
+.messagelist tr.flagged th, 
+.messagelist tr.flagged td, 
+.messagelist tr.flagged td a {
+    color: #000;
+}
+
+#messageheader,
+#composeheaders {
+  background: #fff;
+}
+
+#mailview-right #messageheader {
+  border-radius: 0;
+}
+
+.moreheaderstoggle {
+  background: #fff;
+}
+
+.moreheaderstoggle:focus {
+  background: #fff;
+}
+
+#compose-contacts #directorylist {
+  border-bottom: 4px solid #e6e6e6;
+}
+
+.compose-headers td select#_from {
+  width: 80%;
+}

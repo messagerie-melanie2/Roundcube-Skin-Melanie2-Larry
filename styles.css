@@ -1,0 +1,475 @@
+/**
+ * Roundcube webmail styles for skin "Larry"
+ *
+ * Copyright (c) 2012, The Roundcube Dev Team
+ * Screendesign by FLINT / Büro für Gestaltung, bueroflint.com
+ *
+ * The contents are subject to the Creative Commons Attribution-ShareAlike
+ * License. It is allowed to copy, distribute, transmit and to adapt the work
+ * by keeping credits to the original autors in the README file.
+ * See http://creativecommons.org/licenses/by-sa/3.0/ for details.
+ */
+ 
+ /**
+ * Roundcube webmail styles for skin "Mélanie2 Larry"
+ *
+ * Copyright (c) 2015, PNE Annuaire et Messagerie/MEDDE
+ * Extend Larry FLINT skin
+ *
+ * The contents are subject to the Creative Commons Attribution-ShareAlike
+ * License. It is allowed to copy, distribute, transmit and to adapt the work
+ * by keeping credits to the original autors in the README file.
+ * See http://creativecommons.org/licenses/by-sa/3.0/ for details.
+ */
+
+body {
+	font-size: 12px;
+	background: none;
+	background-color: #e6e6e6; /* New design */
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+	border-radius: 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+/*** buttons ***/
+
+input.button {
+	border-radius: 0;
+}
+
+.formbuttons input.button {
+	border-radius: 0;
+}
+
+/** link buttons **/
+
+a.button,
+.buttongroup {
+	border-radius: 0;
+}
+
+.buttongroup a.button.first,
+.buttongroup a.button:first-child {
+	border-radius: 0;
+}
+
+.buttongroup a.button.last,
+.buttongroup a.button:last-child {
+	border-radius: 0;
+}
+
+#message.statusbar {
+	background: #fff;
+}
+
+#messagestack div {
+	border-radius: 0;
+}
+
+/*** basic page layout ***/
+
+#topline {
+	background: #005d76;
+}
+
+#topnav {
+	background: #F6F6F6;
+	box-shadow: 0 0 2px #999;
+	-o-box-shadow: 0 0 2px #999;
+	-webkit-box-shadow: 0 0 2px #999;
+	-moz-box-shadow: 0 0 2px #999;
+}
+#taskbar a.button-logout span.button-inner {
+	background: url(images/1398171374_quit.png) no-repeat scroll 0% 0% transparent;
+}
+
+#taskbar a.button-logout:hover span.button-inner {
+	background: url(images/1398171374_quit.png) no-repeat scroll 0% 0% transparent;
+}
+
+/*** minimal version of the page header ***/
+
+.minimal #topline {
+	background: #005d76;
+}
+
+.minimal #taskbar a {
+	padding: 10px 8px 0 8px;
+}
+
+.minimal #taskbar .tooltip {
+	z-index: 2000;
+}
+
+/*** taskbar ***/
+
+#taskbar a span.button-inner {
+	color: #4A4A4A;
+	text-shadow: none;
+	background: none;
+}
+
+#taskbar a:focus {
+	color: #4A4A4A;
+	text-shadow: none;
+	background: none;
+}
+
+#taskbar a.button-selected {
+	color: #4A4A4A;
+	background: none;
+	border-top: 5px solid rgb(158, 194, 208);
+}
+
+#taskbar a.button-selected span.button-inner {
+	font-weight: bold;
+	color: rgb(55, 101, 114);
+}
+
+#taskbar a.button-mail span.button-inner {
+	background: url(images/1397844060_mail-01.png) no-repeat scroll 0% 1px transparent;
+}
+
+#taskbar a.button-mail:hover span.button-inner,
+#taskbar a.button-mail.button-selected span.button-inner {
+	background: url(images/1397844060_mail-01.png) no-repeat scroll 0% 1px transparent;
+}
+
+
+#taskbar a.button-addressbook span.button-inner {
+	background: url(images/1397844071_user-01.png) no-repeat scroll 0% -1px transparent;
+}
+
+#taskbar a.button-addressbook:hover span.button-inner,
+#taskbar a.button-addressbook.button-selected span.button-inner {
+	background: url(images/1397844071_user-01.png) no-repeat scroll 0% -1px transparent;
+}
+
+#taskbar a.button-melanie2_jabber span.button-inner {
+	background: url(images/1397844080_message-01.png) no-repeat scroll 0% -1px transparent;
+}
+
+#taskbar a.button-settings span.button-inner {
+	background: url(images/1397844063_gear-01.png) no-repeat scroll 0% -1px transparent;
+}
+
+#taskbar a.button-settings:hover span.button-inner,
+#taskbar a.button-settings.button-selected span.button-inner {
+	background: url(images/1397844063_gear-01.png) no-repeat scroll 0% -1px transparent;
+}
+
+
+#taskbar a.button-calendar span.button-inner {
+	background: url(images/1397844068_agenda-2-01.png) no-repeat scroll 0% -1px transparent;
+}
+
+#taskbar a.button-calendar:hover span.button-inner,
+#taskbar a.button-calendar.button-selected span.button-inner {
+	background: url(images/1397844068_agenda-2-01.png) no-repeat scroll 0% -1px transparent;
+}
+
+
+#mainscreen {
+	left: 0px;
+	bottom: 10px;
+}
+
+.uibox {
+	border: none;
+	border-radius: 0;
+}
+
+/*** lists ***/
+
+.listbox {
+	background: #fff;
+}
+
+.boxtitle,
+.uibox .listing thead th,
+.uibox .listing thead td {
+	border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.uibox .boxtitle,
+.uibox .listing thead th,
+.uibox .listing thead td {
+	background: #fff;
+	color: #000;
+	border-radius: 0;
+}
+
+.listbox .listitem,
+.listbox .tablink,
+.listing tbody td,
+.listing li {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border: 0;
+}
+
+.listbox .listitem a,
+.listbox .listitem span,
+.listbox .tablink a,
+.listing tbody td,
+.listing li a {
+	color: #000;
+}
+
+/* because of border-collapse, we make the left border twice what we want it to be - half will be hidden to the left */
+.listing li {
+	border-left: 3px solid transparent;
+}
+.listing.focus tbody tr > td:first-child {
+  border-left: 2px solid transparent;
+}
+
+.listing li.selected {
+	border-left: 3px solid rgb(158, 194, 208);
+}
+.listing.focus tbody tr.focused > td:first-child {
+	border-left: 2px solid rgb(158, 194, 208);
+}
+
+.listbox .listitem.selected,
+.listbox .tablink.selected,
+.listbox .listitem.selected > a,
+.listbox .tablink.selected > a,
+.listing tbody tr.selected td,
+.listing li.selected,
+.listing li.selected > a {
+	color: #376572;
+	background-color: #fff;
+}
+
+ul.listing li {
+	background-color: #fff;
+}
+
+ul.listing li ul {
+	border-top: none;
+}
+
+.listbox table.listing {
+	background-color: #fff;
+}
+
+ul.treelist li a:focus,
+ul.listing .listitem a:focus,
+ul.listing .listitem span:focus,
+ul.listing.focus .listitem.focused span {
+	color: #000 !important;
+	background-color: #fff;
+	text-shadow: none;
+}
+
+.listbox .boxfooter {
+	border-top: 1px solid #E9E9E9;
+	background: #fff;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.uibox .boxfooter {
+	border-radius: 0;
+}
+
+.boxfooter .listbutton {
+	border-right: 1px solid #E9E9E9;
+	background: #fff;
+}
+
+.boxfooter a.listbutton:focus {
+	color: #000;
+	background: #fff;
+	text-shadow: none;
+}
+
+.uibox .boxfooter .listbutton:first-child {
+	border-radius: 0;
+}
+
+.boxfooter .countdisplay {
+	color: rgb(55, 101, 114);
+}
+
+/*** Records table ***/
+
+.records-table thead th,
+.records-table thead td {
+	color: #000;
+	background: rgb(246, 246, 246);
+	border-left: 1px solid #C6C6C6;
+	border-bottom: 1px solid #C6C6C6;
+}
+
+.records-table thead th a,
+.records-table thead td a,
+.records-table thead th span,
+.records-table thead td span {
+	color: #414141;
+	text-shadow: 0px 1px 1px rgb(255, 255, 255);
+}
+
+.records-table thead th a:focus,
+.records-table thead td a:focus {
+	color: #414141;
+	background-color: rgb(246, 246, 246);
+	text-shadow: 0px 1px 1px rgb(255, 255, 255);
+}
+
+.records-table tr.selected td,
+.records-table tr.thread.expanded.selected td {
+	background: #019bc6 !important;
+}
+
+
+/*** iFrames ***/
+
+iframe {
+	border: 0px none;
+}
+
+.contentbox .boxtitle,
+body.iframe .boxtitle {
+	color: #000;
+	background: #fff;
+}
+
+
+ul.proplist li,
+table.propform td {
+	background: none;
+}
+
+/*** Login form ***/
+#login-logo {
+	position: relative;
+	width: 580px;
+	margin: 2ex auto 2ex auto;
+}
+
+#login-form {
+	margin: 2ex auto 2ex auto;
+}
+
+#login-form .box-inner {
+	background: none;
+	background-color: #fff;
+	border: 1px solid #BCBCBC;
+	border-radius: 0;
+}
+
+#login-form input.button {
+	border-color: #BCBCBC;
+}
+
+#login-form td.title {
+	color: #000;
+	text-shadow: none;
+}
+
+.dropbutton .dropbuttontip:focus,
+.toolbar a.button:focus {
+	color: #555;
+	text-shadow: 0px 1px 1px #eee;
+	background-color: transparent;
+	border-radius: 0;
+}
+a.menuselector {
+	border-radius: 0;
+}
+
+a.menuselector .handle {
+	border-radius: 0;
+}
+
+select.decorated option {
+	color: #2A2A2A;
+	background: #fff;
+	text-shadow: none;
+}
+
+/*** popup menus ***/
+
+.popupmenu,
+#rcmKSearchpane {
+	background: #fff;
+	border-radius: 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.popupmenu.dropdown {
+	border-radius: 0;
+}
+
+.googie_list td,
+ul.toolbarmenu li,
+#rcmKSearchpane ul li {
+	color: #2A2A2A;
+	border: 0;
+}
+
+.googie_list td span,
+ul.toolbarmenu li a {
+	color: #C0C0C0;
+	text-shadow: none;
+	padding: 6px 10px 6px 10px;
+}
+
+.googie_list td span,
+ul.toolbarmenu li a.active {
+	color: #2A2A2A;
+}
+
+.googie_list td.googie_list_onhover,
+ul.toolbarmenu li a.active:hover,
+#rcmKSearchpane ul li.selected,
+select.decorated option:hover {
+	color: #fff;
+}
+
+ul.toolbarmenu li a.active:focus,
+select.decorated option[selected='selected'] {
+	background-color: none;
+}
+
+
+ul.toolbarmenu li label {
+	color: #2A2A2A;
+	text-shadow: none;
+}
+
+ul.toolbarmenu li a.icon {
+	color: #000;
+}
+
+ul.toolbarmenu li span.icon,
+#rcmKSearchpane ul li i.icon {
+	padding: 4px 4px 1px 5px;
+	background: none;
+}
+
+#rcmKSearchpane {
+	border-radius: 0;
+}
+
+#rcmKSearchpane ul li {
+	text-shadow: none;
+}
+
+#rcmdraglayer {
+	border-radius: 0;
+}
+
+/* nested mailboxes */
+
+.folderlist li.mailbox ul {
+	border: 0;
+}

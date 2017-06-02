@@ -1,0 +1,18 @@
+/**
+ * Roundcube webmail Melanie2_Larry styles for the Address Book section
+ *
+ * Copyright (c) 2015, PNE Annuaire et Messagerie/MEDDE
+ * Extend Larry FLINT skin
+ *
+ * The contents are subject to the Creative Commons Attribution-ShareAlike
+ * License. It is allowed to copy, distribute, transmit and to adapt the work
+ * by keeping credits to the original autors in the README file.
+ * See http://creativecommons.org/licenses/by-sa/3.0/ for details.
+ */
+.contactfieldgroup {
+	background: #fff;
+}
+
+.contactfieldgroup legend {
+	background: #fff;
+}
